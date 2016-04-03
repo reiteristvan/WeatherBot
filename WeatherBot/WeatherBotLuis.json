@@ -1,0 +1,127 @@
+{
+  "luis_schema_version": "1.2.0",
+  "name": "WeatherBotLuis",
+  "desc": "This LUIS helps to know how is the weather?",
+  "culture": "en-us",
+  "intents": [
+    {
+      "Name": "WeatherInTown",
+      "Children": []
+    },
+    {
+      "Name": "None",
+      "Children": []
+    },
+    {
+      "Name": "WeatherInTownWithDate",
+      "Children": []
+    }
+  ],
+  "entities": [
+    {
+      "Name": "town",
+      "Children": []
+    },
+    {
+      "Name": "date",
+      "Children": []
+    }
+  ],
+  "bing_entities": [],
+  "actions": [],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "please order a pizza for me",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "how is the weather in budapest",
+      "intent": "WeatherInTown",
+      "entities": [
+        {
+          "entity": "town",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "how is the weather in budapest at 04/04/2016",
+      "intent": "WeatherInTownWithDate",
+      "entities": [
+        {
+          "entity": "town",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "date",
+          "startPos": 7,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "how is the weather in budapest?",
+      "intent": "WeatherInTown",
+      "entities": [
+        {
+          "entity": "town",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "how is the weather in toronto at 04/04/2016?",
+      "intent": "WeatherInTownWithDate",
+      "entities": [
+        {
+          "entity": "town",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "date",
+          "startPos": 7,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "how is the weather in toronto?",
+      "intent": "WeatherInTown",
+      "entities": [
+        {
+          "entity": "town",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "how is the weather in chicago?",
+      "intent": "WeatherInTown",
+      "entities": [
+        {
+          "entity": "town",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "nkjnkjsfn",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "coffee pls",
+      "intent": "None",
+      "entities": []
+    }
+  ]
+}
